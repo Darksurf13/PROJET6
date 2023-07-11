@@ -1,0 +1,130 @@
+.Card {
+    display:flex;
+    flex-direction: column;
+    border:4px solid black;
+    width: 1240px;
+    height: 643px;
+justify-content:space-between;
+margin-bottom:20px
+}
+
+.carrousel {
+    border:1px solid red;
+    width: 1240px;
+    height: 415px;
+    background-color: #FF6060;
+    
+}
+
+.wrapper1 {
+    height:77px;
+    width:1240px;
+    border:1px solid black;
+    margin-top : 10px;
+    display:flex;
+    justify-content:space-between;
+
+    
+}
+
+.title {
+    height:77px;
+    width:635px;
+    border:1px solid black;
+    color:black
+}
+
+.host {
+    height:64px;
+    width:167Px;
+    border:1px solid black;
+    display:flex;
+    justify-content:space-between;
+    color:black
+}
+
+.hostName { 
+    width:64px;
+    color:black
+
+}
+
+.hostPicture {
+    width:64px;
+    height:64px;
+    background-color:#C4C4C4;
+    border-radius:50px;
+    color:black
+}
+
+
+
+.wrapper2 {
+    display:flex;
+    justify-content : space-between;
+    align-items:flex-end;
+    width:1240px;
+    height:36px;
+    border:1px solid black;
+    margin-top : 10px;    
+}
+
+.tags {
+    display:flex;
+    justify-content : space-between;
+    width:365px;
+    height:25px;
+    border:1px solid black;
+}
+
+
+.tag1,.tag2,.tag3 {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:115px;
+    height:25px;
+    border-radius:10px;
+    background-color:#FF6060;
+}
+
+.rate {
+    height:36px;
+    width:196px;
+    border:1px solid black;
+    
+}
+
+
+.details {
+    display:flex;
+    justify-content: space-between;
+    width:1240px;
+    height:52px;
+    border:2px solid black;
+    margin-top : 10px;
+    color:#FFFFFF;
+}
+
+.description {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:582px;
+    height:52px;
+    border:2px solid black;
+    border-radius:10px;
+    background-color: #FF6060;
+}
+
+.equipements {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:582px;
+    height:52px;
+    border:2px solid black;
+    border-radius:10px;
+    background-color: #FF6060;
+    
+}

@@ -1,0 +1,40 @@
+.sectionHeader {
+	width : 1240px;
+	margin:auto;
+	height : 68px;
+	display:flex;
+	justify-content: space-between;
+	margin-bottom : 40px;
+}
+
+.kasa-logo {
+	height: 68px;
+	width: 211px;
+}
+
+nav {
+	display:flex;
+	flex-direction :row-reverse;
+	justify-content : space-around;
+	width:309px;
+	color: red;
+	font-size : 20px;
+	cursor : pointer;
+}
+
+a:link {
+	text-decoration:none;
+	color:#FF6060;
+	font-size:24px;
+	font: weight 500em;
+	font-family: Montserrat;
+}
+
+a:hover {
+	text-decoration:underline
+}
+
+a:visited {
+	color:#FF6060;
+}
+

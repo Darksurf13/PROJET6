@@ -1,0 +1,15 @@
+.bodyApropos {
+    border:1px solid red;
+    width:1240px;
+    height:600px;
+}
+
+.paysageApropos {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:1240px;
+    height: 223px;
+    margin-bottom:px;
+     border-radius:20px;
+}

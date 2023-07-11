@@ -1,0 +1,89 @@
+/* <img src={paysage} alt='paysage' className='paysage'/> */
+
+.body {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:1240px;
+    height : auto; /*1095*/
+    margin:auto;
+    margin-bottom:40px;
+    font-family:'Monserrat';
+}
+
+.paysage {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:1240px;
+    height: 223px;
+    margin-bottom:px;
+     border-radius:20px;
+}
+
+.chezVous {color:black;
+    color:#FFFFFF;
+    font-size: 60px;
+    margin-top : -140px;
+    margin-bottom: 120px;
+}
+
+.annonces {
+    border:1px solid black;
+    display:flex;
+    flex-wrap: wrap;
+    width : 100%;
+    height : auto;
+}
+
+.affichageLogements {
+    border:0px solid red;
+    display :flex;
+    justify-content: center; 
+    flex-wrap:wrap;
+    width : 1240px;
+    flex-direction:row;
+    padding:0;
+    background-color:rgb(201, 193, 193);
+    padding-top:62px;
+}
+
+.ulLogement {
+    display:flex;
+    flex-wrap:wrap;
+    width:1160px;
+    justify-content: space-between;
+    align-items: space-between;
+    margin:0;
+    padding:0;
+    border:0px solid black;
+    background-color:rgb(201, 193, 193);
+    border-radius:20px;
+}
+
+.liLogement {
+    display:flex;
+    flex-direction:column;
+    align-items: flex-start;
+    padding:8px;
+    list-style-type: none;
+    width:330px;
+    height:330px;
+    border:0px solid red;
+    background-color:orangered;
+    color:#FFFFFF;
+    /*margin:10px;*/
+    margin-bottom:62px;
+   border-radius:20px
+}
+
+/*.coverItem {
+    height:330px;
+    width:330px;
+}  */
+
+img {
+    width:330px;
+    height:220px;
+    margin-bottom:20px
+}

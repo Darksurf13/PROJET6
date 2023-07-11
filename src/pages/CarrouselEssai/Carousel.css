@@ -1,0 +1,37 @@
+.carousel {
+    position:relative;
+    width:1240px;
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:4px solid red
+}
+
+.slide {
+    border:2px solid blue;
+    width:100%;
+    height:100%
+}
+
+.leftArrowStyles = {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 45px;
+    color: #fff;
+    z-Index: 1;
+    cursor: pointer
+    };
+    
+    .rightArrowStyles {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 45px;
+    color: #fff;
+    z-index: 1;
+    cursor: pointer
+    };
