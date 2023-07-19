@@ -1,4 +1,7 @@
 .bodyApropos {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     border:1px solid red;
     width:1240px;
     height:600px;
@@ -10,6 +13,6 @@
     align-items:center;
     width:1240px;
     height: 223px;
-    margin-bottom:px;
+    margin-bottom:20px;
      border-radius:20px;
 }

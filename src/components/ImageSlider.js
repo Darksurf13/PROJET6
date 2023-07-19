@@ -1,6 +1,7 @@
 import {useState} from "react";
 
-const ImageSlider = ({slides}) => {
+
+const ImageSlider = ({slides,totalImage}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     
     const sliderStyles = {
@@ -15,6 +16,7 @@ const ImageSlider = ({slides}) => {
         backgroundPosition : "center",
         backgroundSize: "cover",
         backgroundImage: `url(${slides[currentIndex].url})`,
+        text: "1/4",
         };
         
         const leftArrowStyles = {
@@ -22,7 +24,7 @@ const ImageSlider = ({slides}) => {
         top: "50%",
         transform: "translate(0, -50%)",
         left: "32px",
-        fontSize: "45px",
+        fontSize: "196px",
         color: "#fff",
         zIndex: 1,
         cursor: "pointer",
@@ -33,7 +35,7 @@ const ImageSlider = ({slides}) => {
         top: "50%",
         transform: "translate(0, -50%)",
         right: "32px",
-        fontSize: "45px",
+        fontSize: "196px",
         color: "#fff",
         zIndex: 1,
         cursor: "pointer",
@@ -49,7 +51,19 @@ const ImageSlider = ({slides}) => {
         const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
         };
-       
+
+        const numbering ={
+            color:"white",
+            position: "absolute",
+            top: "85%",
+            right: "50%",
+            fontSize: "18px",
+            fontWeight:"500",
+            fontFamily: "Montserrat",
+            zIndex: 1,
+        }
+    
+     
         
         return(
         <div style={sliderStyles}>
@@ -59,7 +73,9 @@ const ImageSlider = ({slides}) => {
         <div style={rightArrowStyles} onClick={goToNext}>
         &#8250; 
         </div>
-        <div style={slideStyles}></div>
+        <div style={slideStyles}>
+        </div>
+        <div style={numbering} >{currentIndex +1}/{totalImage}</div>
        
     
         </div>

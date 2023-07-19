@@ -1,0 +1,29 @@
+.equipment {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width:auto;
+    height:25px;
+    border-radius:10px;
+    padding-right:8px;
+    padding-left: 8px;
+    margin-right:10px;
+    background-color:#FF6060;
+    color:white;
+    font-size:14px;
+    font-weight:500;
+    font-family:'Montserrat';
+    border:1px solid black
+}
+
+.equipments {
+    display:flex;
+    flex-direction:column;
+    /*justify-content : space-between; */
+    width:auto;  /*365px;*/
+    height:25px;
+    border:2px solid red
+   
+    /*border:1px solid black;*/
+}

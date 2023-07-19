@@ -1,3 +1,13 @@
+.kasa-logo {
+	height: 68px;
+	width: 211px;
+}
+
+.kasa-logoNoir {
+	margin-top:50px;
+	margin-bottom:20px
+}
+
 .sectionHeader {
 	width : 1240px;
 	margin:auto;
@@ -5,12 +15,11 @@
 	display:flex;
 	justify-content: space-between;
 	margin-bottom : 40px;
+	font-family:'Montserrat';
+	
 }
 
-.kasa-logo {
-	height: 68px;
-	width: 211px;
-}
+
 
 nav {
 	display:flex;
@@ -26,8 +35,8 @@ a:link {
 	text-decoration:none;
 	color:#FF6060;
 	font-size:24px;
-	font: weight 500em;
-	font-family: Montserrat;
+	font-weight: 500;
+
 }
 
 a:hover {
@@ -36,5 +45,13 @@ a:hover {
 
 a:visited {
 	color:#FF6060;
+	text-decoration:underline
 }
+
+a:active {
+	color:#FF6060;
+	text-decoration:underline
+}
+
+
 

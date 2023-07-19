@@ -1,49 +1,54 @@
 import {useState} from 'react'
 import '../styles/Collapse.css'
+import hightArrow from '../assets/hightArrow.jpg'
+import lowArrow from '../assets/lowArrow.jpg'
 
 
-function Collapse () {
-    const [selected,setSelected] = useState (null)
+function Collapse({ title, description, equipments, show }) {
+  const [isOpen, setIsOpen] = useState(false);
 
-      const toggle = (i) => {
-        if(selected ===i)  {
-          return setSelected(null)
-        }
-        setSelected(i)
-        }
-        return (
-         <div className='wrapper'>
-            <div className ='accordion'>
-              {data.map((item,i)=>(
-                <div className='item'>
-                <div className='title' onClick = {() => toggle(i)}>
-                <h2> {item.title}</h2>
-                <span> {selected === i? '^' : 'v' } </span>
-                </div>
-                <div  className = {
-                      selected === i ? 'content show' : 'content'}>
-                     {item.description}
-                     </div>
-                     </div>
-                     ))}
-            </div>
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="ensembleCollapse">
+      <div className="accordion">
+        <div className="item">
+          <div className="titleCollapse" onClick={toggle}>
+            <h2>{title}</h2>
+            <span>
+              {isOpen ? (
+                <img src={hightArrow} alt="hight arrow" />
+              ) : (
+                <img src={lowArrow} alt="low arrow" />
+              )}
+            </span>
           </div>
-        )
+          
+          {show === "description" && (
+            <div className={isOpen ? "content show" : "content"}>
+              {description}
+            </div>
+          )}
+          {show === "equipments" && (
+            <div className={isOpen ? "content show" : "content"}>
+              <ul>
+                {equipments.map((equipment) => (
+                  <li key={equipment}>{equipment}</li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className={isOpen ? "spacer show" : "spacer"} />
+    </div>
+  );
 }
 
-const data = [
-    {title : 'Fiabilité',
-    description: 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes'
-    },
-    {title : 'Respect',
-    description: 'La bienveillance  fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme'
-    },
-    {title : 'Service',
-    description: 'La bienveillance fait partie des valeurs fondatrices de Kasa.Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme.'
-    },
-    {title : 'Securité',
-    description: 'La sécurité est la priorité de Kasa. Aussi bien pour nos hotes que pour les voyageurs,chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l hote qu au locataire,cela permet à nos equipes de verifier que les standards sont bien respectés.Nous organisons également des ateliers sur la sécurité domestique pour nos hotes'
-    }
-    ]
+
+
+
 
 export default Collapse 

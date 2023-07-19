@@ -8,7 +8,7 @@
     height : auto; /*1095*/
     margin:auto;
     margin-bottom:40px;
-    font-family:'Monserrat';
+    font-family:'Montserrat';
 }
 
 .paysage {
@@ -21,9 +21,11 @@
      border-radius:20px;
 }
 
-.chezVous {color:black;
+.chezVous {
     color:#FFFFFF;
-    font-size: 60px;
+    font-size: 48px;
+    font-weight:500;
+    font-family:'Montserrat';
     margin-top : -140px;
     margin-bottom: 120px;
 }
@@ -82,8 +84,9 @@
     width:330px;
 }  */
 
-img {
+.imgBody {
     width:330px;
     height:220px;
-    margin-bottom:20px
+    margin: bottom 20px ;
+    border-radius: 20px
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Navigate} from 'react-router-dom';
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
@@ -8,7 +9,6 @@ import Logement from './pages/Logement'
 import Footer from './components/Footer.jsx'
 import './styles/Header.css'
 import Header from './components/Header'
-import  allPagesError from './components/allPagesError'
 import logo from './assets/logo.jpg'
 import Error from './pages/page404/Error'
 import { Link } from 'react-router-dom'
@@ -30,12 +30,12 @@ ReactDOM.render(
             <Route path="/Apropos" element={<Apropos />} />
             <Route path="/Logement/:id" element={<Logement />} />
             <Route path="/page404" element={<Error />}  />
-            <Route path="*" element={<allPagesError />}  />
+            <Route path="*" element={<Navigate to="/page404" />}  />
             <Route path="/CarrouselEssai" element={<Carousel />} />
           </Routes>
           <Footer>
-          <img src={logoNoir} alt='logo kasa' className='kasa-logo'/>
-          <div className='conteneurRightsreserved'><p className='rightsReserved'>© Kasa.All rights reserved</p></div>
+          <img src={logoNoir} alt='logo kasa' className='kasa-logoNoir'/>
+          <div className='conteneurRightsreserved'><p className='rightsReserved'>©2020 Kasa.All rights reserved</p></div>
         </Footer >
     </Router>
   </React.StrictMode>,

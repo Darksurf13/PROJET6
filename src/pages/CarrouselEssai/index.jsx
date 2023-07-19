@@ -1,4 +1,4 @@
-import {logementList} from '../Home/logementList'
+import {logementList} from '../../datas/logementList'
 import Carousel from './Carousel'
 
 function CarouselEssai(id) {

@@ -1,49 +1,78 @@
 import '../styles/Card.css'
 import Carrousel from "./Carrousel"
+import Tags from "./Tags"
+import Rating from "./Rating"
+import Collapse from "./Collapse"
 
 
 
-function Card ({id,title,host,tags,pictures}){
+
+function Card ({id,title,host,tags,pictures,rating,description,equipments,location}){
+    
     return (
+        
         <div className='Card'>
-           <div key={id}className="carrousel">
+           <div key={id} className="carrousel">
            <Carrousel
            pictures={pictures}/>
                 </div>
+
             <div className='wrapper1'>
+            <div className='wrapper1Gauche'>
                 <div className="title">
                    {title}
                 </div>
+                <div className="location">
+                   {location}
+                </div>
+                </div>
                 <div className="host">
-<div className="hostName">
-{host.name}
-</div> 
-                    <img src={host.picture} alt='hostpicture' className='hostPicture'/>
-                    
+                    <div className="hostName">
+                        {host.name}
+                    </div> 
+                    <img src={host.picture} alt='hostpicture' className='hostPicture'/> 
                 </div>
             </div>
             
+
             <div className='wrapper2'>
-               <div className="tags">
-               <div className="tag1">
-               {tags[0]}
-                </div>
-                <div className="tag2">
-                {tags[1]}
-                </div>
-                <div className="tag3">
-                {tags[2]}
-                </div>
-               </div>
+               
+            <div key={id} className="tags">
+          <Tags
+             tags={tags}  />
+              </div>
+             
                <div className="rate">
+                <Rating 
+                rating={rating} />
                </div>
             </div>
             <div className='details'>
-                        <div className="description">
-                            <p>Description</p>
+
+            <p className='pDescription'>Description</p>
+                        <div  key={id} className="description" >
+
+                        <Collapse
+  title="Description"
+  description={description}
+  equipments={equipments}
+  show="description"
+/>
+                           
                         </div>
-                        <div className="equipements">
-                            <p>Equipements</p>
+                       
+                        <p className='pEquipments'>Equipements</p>
+                        <div key={id} className="equipements">
+                        <Collapse
+  title="Equipments"
+  description={description}
+  equipments={equipments}
+  show="equipments"
+
+/>
+                    
+                         
+                          
                         </div>
              </div>
         </div> 
