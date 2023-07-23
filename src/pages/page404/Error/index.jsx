@@ -1,5 +1,4 @@
-
-import './Error.css'
+import './Error.scss'
 import { Link } from 'react-router-dom'
 
 function Error() {
@@ -10,10 +9,11 @@ function Error() {
     404
     </div>
     <div className="oups"> 
-    Oups.La page demandée n'existe pas.
+    <div className="oups1"> Oups.La page que  </div>
+    <div className="oups2"> vous demandez n'existe pas.</div>
     </div>
-    <div className="retourner"> 
-   <Link to="/"> Retourner sur la page d'accueil </Link>
+    <div> 
+   <Link to="/"><p className='retourner'> Retourner sur la page d'accueil</p> </Link>
     </div>
     </div>
   )

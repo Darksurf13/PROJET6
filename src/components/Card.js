@@ -1,4 +1,4 @@
-import "../styles/Card.css";
+import "../styles/Card.scss";
 import Carrousel from "./Carrousel";
 import Tags from "./Tags";
 import Rating from "./Rating";
@@ -20,24 +20,29 @@ function Card({
       <div key={id} className="carrousel">
         <Carrousel pictures={pictures} />
       </div>
+
+
+      <div className="wrapper">
       <div className="wrapper1">
-        <div className="wrapper1Gauche">
           <div className="title">{title}</div>
           <div className="location">{location}</div>
-        </div>
-        <div className="host">
-          <div className="hostName">{host.name}</div>
-          <img src={host.picture} alt="hostpicture" className="hostPicture" />
+          <div key={id} className="tags">
+          <Tags tags={tags} />
         </div>
       </div>
+
       <div className="wrapper2">
-        <div key={id} className="tags">
-          <Tags tags={tags} />
+      <div className="host">
+          <div className="hostName">{host.name}</div>
+          <img src={host.picture} alt="hostpicture" className="hostPicture" />
         </div>
         <div className="rate">
           <Rating rating={rating} />
         </div>
       </div>
+      </div>
+
+
       <div className="details">
        
         <div key={id} className="description">
@@ -51,13 +56,14 @@ function Card({
         
         <div key={id} className="equipements">
           <Collapse
-            title="Equipments"
+            title="Equipements"
             description={description}
             equipments={equipments}
             show="equipments"
           />
         </div>
       </div>
+
     </div>
   );
 }

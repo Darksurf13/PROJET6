@@ -1,5 +1,4 @@
-import '../styles//Bodyapropos.css'
-
+import '../styles//Bodyapropos.scss'
 
 
 function Bodyapropos({ children }) {

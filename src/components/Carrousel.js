@@ -1,3 +1,4 @@
+import "../styles/Card.scss";
 import ImageSlider from "./ImageSlider";
 
 function Carrousel({ pictures }) {
@@ -9,16 +10,11 @@ function Carrousel({ pictures }) {
 
   const totalImage = pictures.length;
 
-  const containerStyles = {
-    width: "100%", /* 1240px*/
-    height: "415px",
-    margin: "0 auto",
-    /*border:"4px solid black"*/
-  };
+ 
 
   return (
     <div>
-      <div style={containerStyles}>
+      <div className="containerStyles">
         <ImageSlider slides={slides} totalImage={totalImage} />
       </div>
     </div>

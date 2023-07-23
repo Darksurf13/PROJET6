@@ -1,63 +1,66 @@
-    .ensembleCollapse {
-      width:100%;
-      border:1px solid red
-      
-    }
+.ensembleCollapse {
+  width: 100%;
+}
 
-    .accordion {
-    width : 100%;
-    }
+.accordion {
+  width: 100%;
+}
 
-    .accordion img {
-        width:32px;
-        height:32px;
-        margin-right:20px
-    }
-    
-    .item {
-    background :#FF6060  ;
-    margin-bottom: 47.33px;
-    border-radius :10px;
-    }
-    
-    .titleCollapse {
-    color: #FFFFFF;
-    display : flex ;
-    justify-content : space-between;
-    align-items : center;
-    cursor : pointer;
-    width:100%;  /* 1023 - 20 - 20  */
-     height:52px; 
-     border-radius:5px;
-    }
-    
-    .content {
-    color : #FFFFFF;
-    max-height: 0;
-    overflow : hidden;
-    transition: max-height 0.2s ease-out;
-    color:#FF6060;
-    background-color:#F6F6F6;
-    padding-left:10px;
-    padding-right:10px;
-   
-    }
-    
-    .content.show {
-   max-height : 255px;
-   display:flex;
-   flex-direction:column
-    }
+.accordion img {
+  width: 32px;
+  height: 32px;
+  margin-right: 20px;
+}
 
-    h2{
-        margin-left:20px
-    }
+.item {
+  background: #ff6060;
+  margin-bottom: 47.33px;
+  border-radius: 10px;
+}
 
-    /*.spacer {
-        height: 0;
-        transition: height 0.2s ease-out;
-      }
-      
-      .spacer.show {
-        height: 500px;
-      } */
+.titleCollapse {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 52px;
+  border-radius: 5px;
+}
+
+.content {
+  color: #ffffff;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #ff6060;
+  background-color: #f6f6f6;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content.show {
+  max-height: 255px;
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  z-index:1
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .titleCollapse {
+    height: 30px;
+  }
+  .accordion img {
+    height: 22px;
+  }
+
+  .item {
+    margin-bottom: 27px;
+  }
+}

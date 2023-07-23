@@ -58,9 +58,9 @@
 }
 
 .containerStyles {
-  width: 100%; /* 1240px*/
+  width: 100%; /*1240px*/
   height: 415px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .wrapper1Gauche {
@@ -76,7 +76,7 @@
 
 .wrapper1 {
   height: 146px;
-  width: 70%; /*1240px;*/
+  width: 70%; /*1240px*/
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -136,7 +136,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 30%; /*1240px;*/
+  width: 30%; /*1240px*/
   height: 146px;
   margin-top: 10px;
 }
@@ -155,8 +155,9 @@
   display: flex;
   align-items: start;
   justify-content: space-between;
-  width: 100%; /*240px;*/
-  height: 104px; /* height:52px; */
+  width: 100%; /*240px*/
+  height: 104px; /*height:
+  52px*/
   margin-top: 10px;
   color: #ffffff;
 }
@@ -165,7 +166,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 46.94%; /*582px;*/
+  width: 46.94%; /*582px*/
   border-radius: 10px;
 }
 
@@ -178,92 +179,75 @@
   width: 46.94%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768 px) {
   .Card {
-    height: 570px;
+    height: 570 px;
   }
-
   .carrousel {
-    height: 255px;
+    height: 255 px;
   }
-
   .numbering {
     display: none;
   }
-
   .title {
-    font-size: 18px;
-    height: 46px;
+    font-size: 18 px;
+    height: 46 px;
   }
-
   .location {
-    font-size: 14px;
-    height: 22px;
-    margin-bottom: 8px;
+    font-size: 14 px;
+    height: 22 px;
+    margin-bottom: 8 px;
   }
-
   .wrapper {
     flex-direction: column;
-    height: 180px;
+    height: 180 px;
   }
-
   .wrapper1 {
-    height: 120px;
+    height: 120 px;
     margin-top: 0;
   }
-
   .wrapper2 {
-    height: 70px;
+    height: 70 px;
     width: 100%;
     flex-direction: row-reverse;
     align-items: start;
     justify-content: space-between;
-    margin-top: -20px;
+    margin-top: -20 px;
   }
-
   .rate {
-    margin-top: 15px;
-    height: 18px;
+    margin-top: 15 px;
+    height: 18 px;
   }
-
   .rate img {
-    width: 18px;
-    height: 18px;
+    width: 18 px;
+    height: 18 px;
   }
-
   .hostName {
-    font-size: 12px;
+    font-size: 12 px;
   }
-
   .containerStyles {
-    height: 255px;
+    height: 255 px;
   }
-
   .leftArrowStyles {
-    font-size: 80px;
+    font-size: 80 px;
   }
-
   .rightArrowStyles {
-    font-size: 80px;
+    font-size: 80 px;
   }
-
   .details {
     flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 20 px;
+    margin-bottom: 20 px;
   }
-
   .description {
-    font-size: 13px;
-    width: 100%;
+    font-size: 13 px;
+    width: 100 %;
   }
-
   .equipements {
-    font-size: 13px;
-    width: 100%;
+    font-size: 13 px;
+    width: 100 %;
   }
-
   .titleCollapse {
-    height: 30px;
+    height: 30 px;
   }
 }

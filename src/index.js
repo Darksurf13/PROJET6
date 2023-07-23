@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Apropos from './pages/Apropos'
-import Carousel from './pages/CarrouselEssai'
 import Logement from './pages/Logement'
 import Footer from './components/Footer.jsx'
 import './styles/Header.css'
@@ -31,7 +30,6 @@ ReactDOM.render(
             <Route path="/Logement/:id" element={<Logement />} />
             <Route path="/page404" element={<Error />}  />
             <Route path="*" element={<Navigate to="/page404" />}  />
-            <Route path="/CarrouselEssai" element={<Carousel />} />
           </Routes>
           <Footer>
           <img src={logoNoir} alt='logo kasa' className='kasa-logoNoir'/>

@@ -1,7 +1,7 @@
-
 import Card from '../../components/Card'
 import {Navigate,useParams} from 'react-router-dom'
 import {logementList} from '../../datas/logementList'
+import '../../styles/Card.scss'
 
 
 
@@ -18,9 +18,9 @@ function Logement(){
       }
 
     return(
-<div>
+
 (
-        <div key={id} >
+        <div className='cardBody' key={id} >
     <Card
     title={logement.title}
     host={logement.host}
@@ -34,7 +34,7 @@ function Logement(){
     </div> 
     )
 
-</div>
+
  )
 }
 

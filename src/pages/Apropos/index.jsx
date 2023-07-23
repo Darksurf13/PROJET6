@@ -1,6 +1,6 @@
 import paysageApropos from '../../assets/paysageApropos.png'
 import Bodyapropos from '../../components/Bodyapropos'
-import '../../styles/aPropos.css'
+import '../../styles/Bodyapropos.scss'
 import Collapse from '../../components/Collapse'
 import {useParams} from 'react-router-dom'
 import {data} from '../../datas/data'

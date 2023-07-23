@@ -1,5 +1,4 @@
-
-import '../styles/Tags.css'
+import '../styles/Tags.scss'
 
 function Tags ({tags}) {
     console.log(tags)
