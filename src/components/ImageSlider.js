@@ -63,8 +63,6 @@ const ImageSlider = ({slides,totalImage}) => {
             zIndex: 1,
         }
     
-     
-        
         return(
         <div style={sliderStyles}>
         <div style={leftArrowStyles} onClick={goToPrevious}>

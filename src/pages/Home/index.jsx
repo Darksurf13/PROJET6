@@ -7,10 +7,14 @@ import { Link } from 'react-router-dom'
 function Home() {
 	return <div>
     <Body>
-    <img src={paysage} alt='paysage' className='paysage'/>
-      <p className='chezVous'>Chez vous, partout et ailleurs</p>
+    <div className='divPaysage'>
+      <img src={paysage} alt='paysage' className='paysage'/>
+      </div>
+      <div className='chezVous'>
+        <p className='chezVous1'>Chez vous,</p>
+        <p className='chezVous2'>partout et ailleurs</p> 
+        </div>
    
-    <section className='annonces'></section>
    
     <div className='affichageLogements'>
         <ul className='ulLogement'>
@@ -19,7 +23,7 @@ function Home() {
             <Link to={`./Logement/${logement.id}`} >  
             <li className='liLogement' key={logement.id}  >
                <div className='coverItem'><img src={logement.cover}  alt={logement.id} className='imgBody' /> </div>
-                {logement.title}
+               <div className='logementTitle'> {logement.title} </div>
             </li>
        </Link>
         )})}

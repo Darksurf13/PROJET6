@@ -1,34 +1,36 @@
-.kasa-logo {
-	height: 68px;
-	width: 211px;
-}
-
 .kasa-logoNoir {
 	margin-top:50px;
 	margin-bottom:20px
 }
 
 .sectionHeader {
-	width : 1240px;
+	width :   86.11%;  /*1240px;*/
 	margin:auto;
 	height : 68px;
 	display:flex;
 	justify-content: space-between;
 	margin-bottom : 40px;
 	font-family:'Montserrat';
-	
+	border:1px solid red
 }
 
-
+.kasa-logo {
+	height: 68px;
+	width:17%; /*211px; */ 
+}
 
 nav {
 	display:flex;
 	flex-direction :row-reverse;
 	justify-content : space-around;
-	width:309px;
+	width: 309px;/*25%*/
 	color: red;
-	font-size : 20px;
 	cursor : pointer;
+	border:1px solid red
+}
+
+nav a {
+	font-size : 20px;
 }
 
 a:link {
@@ -36,7 +38,6 @@ a:link {
 	color:#FF6060;
 	font-size:24px;
 	font-weight: 500;
-
 }
 
 a:hover {
@@ -46,12 +47,32 @@ a:hover {
 a:visited {
 	color:#FF6060;
 	text-decoration:underline
-}
+} 
 
 a:active {
 	color:#FF6060;
 	text-decoration:underline
 }
 
+@media (max-width: 768px) {
+	
+	.kasa-logo {
+	  height: 46.88px;
+	  width: 145px;
+	}
+  
+    a:link{
+	  font-size:12px
+   }
+
+nav  {
+margin-left:60px
+}
+
+   .pNav {
+	margin-top:15px
+}
+  }
+  
 
 

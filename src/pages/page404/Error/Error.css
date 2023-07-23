@@ -1,5 +1,5 @@
 .error {
-    width:1240px;
+    width:100%; /*1240px*/
     height:600px;
     display:flex;
     flex-direction:column;

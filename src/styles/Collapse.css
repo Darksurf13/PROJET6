@@ -1,19 +1,11 @@
-
-/*.wrapper  {
-    height : 104px; 
-    width : 1023px;
-    justify-content : center;
-    align-items : center;
-    margin-top:20px;
-    border:1px solid black
-    } */
     .ensembleCollapse {
-      width:100%
+      width:100%;
+      border:1px solid red
+      
     }
 
     .accordion {
     width : 100%;
-    /*border:1px solid red; */
     }
 
     .accordion img {
@@ -24,8 +16,7 @@
     
     .item {
     background :#FF6060  ;
-    margin-bottom: 10px;
-    /*padding: 0px 20px; */
+    margin-bottom: 47.33px;
     border-radius :10px;
     }
     
@@ -56,7 +47,6 @@
    max-height : 255px;
    display:flex;
    flex-direction:column
-    /* */
     }
 
     h2{

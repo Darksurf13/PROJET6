@@ -10,4 +10,10 @@ code {
     monospace;
 }
 
+@media (max-width: 768px) {
+#root {
+  height:auto
+}
+}
+
 

@@ -15,7 +15,7 @@ function Apropos() {
     <Bodyapropos>
     <img src={paysageApropos} alt='paysage' className='paysageApropos'/>
     
-<div>
+
     {data.map((data) => {
           return(
             <div className='aPropos'>
@@ -27,7 +27,7 @@ function Apropos() {
             </div>
            
         )})}
-        </div>
+     
 
    
     </Bodyapropos>

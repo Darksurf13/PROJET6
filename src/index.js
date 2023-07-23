@@ -21,8 +21,8 @@ ReactDOM.render(
     <Header>
       <img src={logo} alt='logo kasa' className='kasa-logo'/>
       <nav>
-      <Link to="/APropos">  <div className='li'><p>A propos</p></div></Link>
-      <Link to="/"> <div className='li'><p>Accueil</p></div></Link>
+      <Link to="/APropos">  <div className='li'><p className="pNav">A propos</p></div></Link>
+      <Link to="/"> <div className='li'><p className="pNav">Accueil</p></div></Link>
       </nav>
     </Header>
           <Routes>
@@ -35,7 +35,10 @@ ReactDOM.render(
           </Routes>
           <Footer>
           <img src={logoNoir} alt='logo kasa' className='kasa-logoNoir'/>
-          <div className='conteneurRightsreserved'><p className='rightsReserved'>©2020 Kasa.All rights reserved</p></div>
+          <div className='conteneurRightsreserved'>
+            <p className='rightsReserved1'>©2020 Kasa.All </p>
+            <p className='rightsReserved2'>rights reserved</p>
+            </div>
         </Footer >
     </Router>
   </React.StrictMode>,

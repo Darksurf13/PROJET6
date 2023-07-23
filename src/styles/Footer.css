@@ -1,11 +1,9 @@
 .sectionFooter {
 	color: #FFFFFF;
 	background-color: black;
-	width: 1240px;
+	width:86.11%; /*1240px;*/
 	margin:auto;
 	height : 209px;
-	padding: 32px;
-	border-top: solid 3px black;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: column;
@@ -23,12 +21,35 @@
 	width:513px;
 	height:46px;
 	display:flex;
-	justify-content:center
+	justify-content:center;
 }
 
-.rightsReserved {
+.rightsReserved1,.rightsReserved2 {
+	display:block;
+	margin:0;
+	width:190px;
+	height:40px;
 	font-size:24px;
 	font-weight:500;
 	line-height:34.23px;
 }
 
+@media (max-width: 768px) {
+	.sectionFooter {
+	  width: 100%;
+	  height:209px
+	}
+
+	.conteneurRightsreserved {
+		flex-direction:column;
+		align-items:center;
+	}
+
+	.rightsReserved1,.rightsReserved2 {
+		font-size:12px;
+		height:20px;
+		display:flex;
+		justify-content:center
+  }
+}
+  
