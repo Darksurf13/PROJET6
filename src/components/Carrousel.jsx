@@ -10,8 +10,6 @@ function Carrousel({ pictures }) {
 
   const totalImage = pictures.length;
 
- 
-
   return (
     <div>
       <div className="containerStyles">

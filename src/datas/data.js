@@ -1,18 +1,26 @@
 export const data = [
-    {id : 1,
-        title : 'Fiabilité',
-    description: 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes'
-    },
-    {id : 2,
-        title : 'Respect',
-    description: 'La bienveillance  fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme'
-    },
-    {id : 3,
-        title : 'Service',
-    description: 'La bienveillance fait partie des valeurs fondatrices de Kasa.Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme.'
-    },
-    {id : 4,
-        title : 'Securité',
-    description: 'La sécurité est la priorité de Kasa. Aussi bien pour nos hotes que pour les voyageurs,chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l hote qu au locataire,cela permet à nos equipes de verifier que les standards sont bien respectés.Nous organisons également des ateliers sur la sécurité domestique pour nos hotes'
-    }
-    ]
+  {
+    id: 1,
+    title: "Fiabilité",
+    description:
+      "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes",
+  },
+  {
+    id: 2,
+    title: "Respect",
+    description:
+      "La bienveillance  fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme",
+  },
+  {
+    id: 3,
+    title: "Service",
+    description:
+      "La bienveillance fait partie des valeurs fondatrices de Kasa.Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme.",
+  },
+  {
+    id: 4,
+    title: "Securité",
+    description:
+      "La sécurité est la priorité de Kasa. Aussi bien pour nos hotes que pour les voyageurs,chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l hote qu au locataire,cela permet à nos equipes de verifier que les standards sont bien respectés.Nous organisons également des ateliers sur la sécurité domestique pour nos hotes",
+  },
+];

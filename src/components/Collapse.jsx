@@ -1,8 +1,7 @@
-import {useState} from 'react'
-import '../styles/Collapse.scss'
-import hightArrow from '../assets/hightArrow.jpg'
-import lowArrow from '../assets/lowArrow.jpg'
-
+import { useState } from "react";
+import "../styles/Collapse.scss";
+import hightArrow from "../assets/hightArrow.jpg";
+import lowArrow from "../assets/lowArrow.jpg";
 
 function Collapse({ title, description, equipments, show }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,16 +18,16 @@ function Collapse({ title, description, equipments, show }) {
             <h2>{title}</h2>
             <span>
               {isOpen ? (
-                <img src={hightArrow} alt="hight arrow" />
-              ) : (
                 <img src={lowArrow} alt="low arrow" />
+              ) : (
+                <img src={hightArrow} alt="hight arrow" />
               )}
             </span>
           </div>
-          
+
           {show === "description" && (
             <div className={isOpen ? "content show" : "content"}>
-              {description}
+              <div className="inside"> {description} </div>
             </div>
           )}
           {show === "equipments" && (
@@ -47,8 +46,4 @@ function Collapse({ title, description, equipments, show }) {
   );
 }
 
-
-
-
-
-export default Collapse 
+export default Collapse;

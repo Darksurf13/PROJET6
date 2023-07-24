@@ -1,84 +1,70 @@
-.kasa-logoNoir {
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .sectionHeader {
-    width: 86.11%; /*1240px;*/
-    margin: auto;
-    height: 68px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    font-family: "Montserrat";
-  }
-  
-  .kasa-logo {
-    height: 68px;
-    width: 17%; /*211px; */
-  }
-  
-  nav {
+$color_1: red;
+$color_2: #ff6060;
+$font-family_1: "Montserrat";
+
+.sectionHeader {
+  width: 86.11%;
+  margin: auto;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-family: $font-family_1;
+}
+.kasa-logo {
+  height: 68px;
+  width: 17%;
+}
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  width: 309px;
+  color: $color_1;
+  cursor: pointer;
+  a {
+    font-size: 20px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
-    width: 309px; /*25%*/
-    color: red;
-    cursor: pointer;
-  
-      a {
-        font-size: 20px;
-        display:flex;
-        flex-direction:row-reverse;
-        width:50%
-      }
+    width: 50%;
   }
-  
+}
+a {
+  &:link {
+    text-decoration: none;
+    color: $color_2;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+  &:visited {
+    color: $color_2;
+    text-decoration: underline;
+  }
+  &:active {
+    color: $color_2;
+    text-decoration: underline;
+  }
+}
+@media (max-width: 768px) {
+  .sectionHeader {
+    margin-bottom: 0px;
+  }
+  .kasa-logo {
+    height: 46.88px;
+    width: 145px;
+  }
   a {
-      &:link {
-        text-decoration: none;
-        color: #ff6060;
-        font-size: 24px;
-        font-weight: 500;
-      }
-  
-      &:hover {
-        text-decoration: underline;
-      }
-  
-      &:visited {
-        color: #ff6060;
-        text-decoration: underline;
-      }
-  
-      &:active {
-        color: #ff6060;
-        text-decoration: underline;
-      }
+    &:link {
+      font-size: 12px;
+    }
   }
-  
-  @media (max-width: 768px) {
-      .sectionHeader {
-          margin-bottom: 0px;
-      }
-  
-      .kasa-logo {
-          height: 46.88px;
-          width: 145px;
-      }
-  
-      a {
-          &:link {
-              font-size: 12px;
-          }
-      }
-  
-      nav {
-          margin-left: 10px;
-  
-          .pNav {
-              margin-top: 15px;
-          }
-      }
+  nav {
+    margin-left: 10px;
   }
-  
+  .pNav {
+    margin-top: 15px;
+  }
+}

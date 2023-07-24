@@ -1,0 +1,46 @@
+$color_1: #ff6060;
+
+.error {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  font-family: "Montserrat";
+}
+.error404 {
+  color: $color_1;
+  font-size: 288px;
+  font-weight: 700;
+}
+.oups {
+  color: $color_1;
+  font-size: 36px;
+  margin-bottom: 100px;
+  display: flex;
+}
+.retourner {
+  color: $color_1;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .error {
+    height: 300px;
+  }
+  .oups {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+  }
+  .retourner {
+    font-size: 14px;
+    margin-top: -60px;
+  }
+  .error404 {
+    font-size: 96px;
+    margin-top: 30px;
+  }
+}

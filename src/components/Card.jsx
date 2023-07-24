@@ -21,30 +21,27 @@ function Card({
         <Carrousel pictures={pictures} />
       </div>
 
-
       <div className="wrapper">
-      <div className="wrapper1">
+        <div className="wrapper1">
           <div className="title">{title}</div>
           <div className="location">{location}</div>
           <div key={id} className="tags">
-          <Tags tags={tags} />
+            <Tags tags={tags} />
+          </div>
         </div>
-      </div>
 
-      <div className="wrapper2">
-      <div className="host">
-          <div className="hostName">{host.name}</div>
-          <img src={host.picture} alt="hostpicture" className="hostPicture" />
-        </div>
-        <div className="rate">
-          <Rating rating={rating} />
+        <div className="wrapper2">
+          <div className="host">
+            <div className="hostName">{host.name}</div>
+            <img src={host.picture} alt="hostpicture" className="hostPicture" />
+          </div>
+          <div className="rate">
+            <Rating rating={rating} />
+          </div>
         </div>
       </div>
-      </div>
-
 
       <div className="details">
-       
         <div key={id} className="description">
           <Collapse
             title="Description"
@@ -53,7 +50,7 @@ function Card({
             show="description"
           />
         </div>
-        
+
         <div key={id} className="equipements">
           <Collapse
             title="Equipements"
@@ -63,7 +60,6 @@ function Card({
           />
         </div>
       </div>
-
     </div>
   );
 }

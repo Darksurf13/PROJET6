@@ -1,8 +1,7 @@
-import '../styles/Header.scss'
+import "../styles/Header.scss";
 
 function Header({ children }) {
-	return <div className='sectionHeader'>{children}</div>
+  return <div className="sectionHeader">{children}</div>;
 }
 
-
-export default Header
+export default Header;

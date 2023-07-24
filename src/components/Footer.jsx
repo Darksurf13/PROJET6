@@ -1,13 +1,7 @@
-import '../styles/Footer.scss'
-
+import "../styles/Footer.scss";
 
 function Footer({ children }) {
-
-  return (
-  <footer className='sectionFooter'>
-{ children }
-  </footer>
-  )
+  return <footer className="sectionFooter">{children}</footer>;
 }
 
-export default Footer
+export default Footer;
