@@ -26,16 +26,18 @@ const ImageSlider = ({ slides, totalImage }) => {
 
   return (
     <div className="sliderStyles">
-      <div className="leftArrowStyles" onClick={goToPrevious}>
+      {totalImage > 1 && ( <div className="leftArrowStyles" onClick={goToPrevious}>
         &#8249;
-      </div>
-      <div className="rightArrowStyles" onClick={goToNext}>
+      </div>)}
+      {totalImage > 1 && (<div className="rightArrowStyles" onClick={goToNext}>
         &#8250;
-      </div>
+      </div>)}
       <div style={slideStyles}></div>
+      {totalImage > 1 && (
       <div className="numbering">
         {currentIndex + 1}/{totalImage}
       </div>
+    )}
     </div>
   );
 };
