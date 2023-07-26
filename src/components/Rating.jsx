@@ -8,9 +8,9 @@ function Rating({ rating }) {
   // étoiles jaunes
   const RatingYellow =
     rating === "Orange" ? (
-      <img src={starGris} alt="star orange" />
+      <img src={starGris} alt="star gris" />
     ) : (
-      <img src={starOrange} alt="star gris" />
+      <img src={starOrange} alt="star orange " />
     );
 
   const rest = 6 - rating;

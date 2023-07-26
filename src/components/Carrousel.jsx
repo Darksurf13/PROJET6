@@ -5,7 +5,6 @@ function Carrousel({ pictures }) {
   console.log(pictures.length);
   const slides = pictures.map((picture) => ({
     url: picture,
-    // title:'room',
   }));
 
   const totalImage = pictures.length;

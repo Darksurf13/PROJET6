@@ -41,7 +41,6 @@ function Collapse({ title, description, equipments, show }) {
           )}
         </div>
       </div>
-      <div className={isOpen ? "spacer show" : "spacer"} />
     </div>
   );
 }

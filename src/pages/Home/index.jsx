@@ -18,8 +18,8 @@ function Home() {
         <ul className="ulLogement">
           {data.map((logement) => {
             return (
-              <Link to={`./Logement/${logement.id}`}>
-                <li className="liLogement" key={logement.id}>
+              <Link to={`./Logement/${logement.id}`} key={logement.id}>
+                <li className="liLogement" >
                   <div className="coverItem">
                     <img
                       src={logement.cover}

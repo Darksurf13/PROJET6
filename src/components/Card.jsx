@@ -35,7 +35,7 @@ function Card({
             <div className="hostName">{host.name}</div>
             <img src={host.picture} alt="hostpicture" className="hostPicture" />
           </div>
-          <div className="rate">
+          <div key={id} className="rate">
             <Rating rating={rating} />
           </div>
         </div>
