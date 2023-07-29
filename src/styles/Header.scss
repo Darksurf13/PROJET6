@@ -15,6 +15,9 @@ $font-family_1: "Montserrat";
   height: 68px;
   width: 17%;
 }
+.selected {
+  text-decoration: underline;
+}
 nav {
   display: flex;
   flex-direction: row-reverse;
