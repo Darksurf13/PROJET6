@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PROJET6/static/css/main.48f0f6bc.css",
+    "main.js": "/PROJET6/static/js/main.03e6fa0a.js",
+    "static/media/paysageApropos.png": "/PROJET6/static/media/paysageApropos.fcf1cf163333a9c616ea.png",
+    "static/media/paysage.png": "/PROJET6/static/media/paysage.6e94acd4444ebf45d58a.png",
+    "static/media/logo.jpg": "/PROJET6/static/media/logo.12837068c51d0b81371a.jpg",
+    "index.html": "/PROJET6/index.html",
+    "main.48f0f6bc.css.map": "/PROJET6/static/css/main.48f0f6bc.css.map",
+    "main.03e6fa0a.js.map": "/PROJET6/static/js/main.03e6fa0a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48f0f6bc.css",
+    "static/js/main.03e6fa0a.js"
+  ]
+}
